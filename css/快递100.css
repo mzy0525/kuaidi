@@ -1,0 +1,413 @@
+/*通用样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #307EE7;
+}
+.left{
+     float: left;
+
+ }
+.right{
+    float: right;
+}
+
+li{
+    list-style: none;
+}
+.container{
+    width: 960px;
+    margin: auto;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+img:hover{
+    cursor: pointer;
+
+}
+/**********************************************导航部分*/
+.nav{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    z-index: 99;
+}
+.nav ul li{
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+.nav ul li div{
+    position: absolute;
+    left: 2px;
+    top: 50px;
+    z-index: 5;
+    line-height: 30px;
+    border: 1px solid #cccccc;
+    display: none;
+    width: 100px;
+    background-color: #FFFFFF;
+
+}
+.nav ul li div p{
+    line-height: 50px;
+}
+.nav ul li:hover div{
+    display: block;
+}
+/********************************************搜索部分*/
+.search .search-one{
+    height: 168px;
+    background: url("../img/s1.png")  -590px 0px;
+}
+.search .search-two{
+    height: 168px;
+    background: url("../img/s2.png")  -590px 0px;
+    position: relative;
+}
+.search .search-two .search-frame{
+    /*border: 3px solid ;*/
+    position: absolute;
+    bottom: 0px;
+
+}
+.search .search-two .aircraft{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-right: 1px solid #cccccc;
+}
+.search .search-two input{
+    width: 675px;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    font-weight: 100;
+}
+.search .search-two button{
+    width: 186px;
+    height: 60px;
+    border: none;
+    background:url("../img/sz_icon.png") no-repeat  78px -275px;
+    background-color: #FF7800;
+}
+.search .search-three{
+    position: relative;
+    height: 168px;
+    background: url("../img/s3.png")  -590px 0px;
+}
+.search .search-three ul li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+.search .search-three ul .Sky-blue{
+    background-color:#307EE7 ;
+}
+.search .search-three ul li:hover{
+    background-color:#307EE7 ;
+}
+.search .search-three ul{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -30px; ;
+}
+
+/*!********************************************************app介绍部分*!*/
+.introduce .introduce-one{
+    height: 450px;
+}
+.introduce .introduce-one h3 {
+    margin-top: 80px;
+    font-size: 25px;
+    text-align: right;
+}
+.introduce .introduce-one p{
+   text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+    color: #737F79;
+}
+.introduce .introduce-one .m-top{
+    margin-top: 20px;
+}
+.introduce .introduce-one .h230{
+    width: 446px;
+    height: 230px;
+    background: url("../img/spider_index_v4.png") no-repeat 319px -487px;
+    position: relative;
+}
+.introduce .introduce-one .h230 .dingwei{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    font-size: 14px;
+    color: #737F79;
+}
+.introduce .introduce-one .h230 button{
+    width: 191px;
+    height: 51px;
+    background: url("../img/spider_index_v4.png") no-repeat 16px -200px;
+    background-color: #ff7800;
+    margin-right: 190px;
+    margin-top: 20px;
+    border: none;
+    padding-left: 30px;
+}
+.introduce .introduce-one .h230 .android{
+    background: url("../img/spider_index_v4.png") no-repeat 16px -147px;
+    background-color: #ff7800;
+    margin-top: 60px;
+}
+.introduce .introduce-one .h230 .xiazai{
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 16px;
+
+}
+
+/********************************************************快递100收件端 - 快递员的收件、打单神器介绍部分*/
+.introduce .introduce-two{
+    width: 100%;
+    height: 450px;
+    background-color: #F7F8FA;
+   /*padding-left: 40px;*/
+}
+.introduce .introduce-two .zuo{
+    float: left;
+}
+.introduce .introduce-two img{
+    float: left;
+    margin-top: 50px;
+}
+.introduce .introduce-two h3 {
+    margin-top: 40px;
+    font-size: 23px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.introduce .introduce-two p{
+    /*text-align: right;*/
+    font-size: 16px;
+    line-height: 36px;
+    color: #737F79;
+}
+.introduce .introduce-two .h230{
+    width: 380px;
+    height: 200px;
+    background: url("../img/spider_index_v4.png") no-repeat  216px -490px;
+    position: relative;
+}
+.introduce .introduce-two .h230 .dingwei{
+    position: absolute;
+    bottom: 10px;
+    right: 47px;
+    font-size: 14px;
+    color: #737F79;
+}
+.introduce .introduce-two .h230 button{
+    width: 191px;
+    height: 51px;
+    background: url("../img/spider_index_v4.png") no-repeat 16px -200px;
+    background-color: #ff7800;
+    margin-right: 190px;
+    margin-top: 20px;
+    border: none;
+    padding-left: 30px;
+}
+.introduce .introduce-two .h230 .android{
+    background: url("../img/spider_index_v4.png") no-repeat 16px -147px;
+    background-color: #ff7800;
+    margin-top: 60px;
+}
+.introduce .introduce-two .h230 .xiazai{
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 16px;
+
+}
+/*****************************************************企业、微商及商务人士的“快递管家*/
+.introduce .introduce-three{
+     width: 100%;
+     height: 450px;
+     background-color: #FFFFFF;
+     /*padding-left: 40px;*/
+     /*border: 1px solid black;*/
+     /*position: absolute;*/
+     /*z-index: 90;*/
+ }
+.introduce .introduce-three .zuo{
+    float: left;
+}
+
+.introduce .introduce-three img{
+    float: right;
+    margin-top: 50px;
+}
+.introduce .introduce-three h3 {
+    margin-top: 40px;
+    font-size: 23px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.introduce .introduce-three ul li{
+     /*text-align: right;*/
+     font-size: 16px;
+     line-height: 36px;
+     color: #737F79;
+ }
+
+.introduce .introduce-three ul li button{
+    width: 400px;
+    height: 60px;
+    margin-top: 40px;
+    background-color:#ff7800;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+.introduce .introduce-four{
+    width: 100%;
+    height:450px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+.introduce .introduce-four img{
+    margin-top: 30px;
+    float: left;
+}
+
+.introduce .introduce-four .zuo{
+    margin-top: 30px;
+    float: left;
+    /*margin-left: 30px;*/
+}
+.introduce .introduce-four .zuo h3{
+    font-size: 25px;
+    font-weight: 900;
+    text-indent: 120px;
+}
+.introduce .introduce-four .zuo h3:last-of-type{
+    margin-bottom: 30px;
+}
+.introduce .introduce-four .zuo ul li{
+    color: #656565;
+    text-indent: 120px;
+    line-height: 30px;
+}
+.introduce .introduce-four .zuo ul li button{
+    border: none;
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    background-color: #ff7800;
+    border-radius: 0%;
+    margin-top: 20px;
+}
+
+/*****************用户群合作伙伴*/
+.lord{
+    width: 100%;
+    height: 260px;
+    /*background-color: black;*/
+    padding-top: 30px;
+    box-sizing:border-box;
+}
+.lord h3{
+    font-weight: 700;
+    color: #4c4c4c;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.lord p{
+    text-align: right;
+
+}
+.lord a{
+    color: #0a32ff;
+}
+/**************************************页脚处*/
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #EFF2F5;
+    padding-top: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer ul{
+    float: left;
+    width: 150px;
+}
+footer ul li{
+    line-height: 25px
+;
+}
+footer ul li:first-of-type{
+    height: 35px;
+    /*line-height: 30px;*/
+}
+
+footer .w127{
+    width: 127px;
+    height: 152px;
+    background: url("../img/spider_index_v4.png")no-repeat 0px -531px;
+    float: right;
+    padding-top: 138px;
+    box-sizing:border-box;
+}
+footer .w127:nth-of-type(2){
+    background: url("../img/spider_index_v4.png")no-repeat -171px -531px;
+    margin-right: 30px;
+}
+footer .w127 p{
+font-size: 13px;
+    color: #4c4c4c;
+}
+footer .footer-footer{
+
+    height: 180px;
+    /*background-color: black;*/
+}
+footer .shang{
+    height: 180px;
+}
+footer .footer-footer p{
+    text-align: center;
+}
+.mao-1{
+    position: fixed;
+    bottom: 150px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+   background: url("../img/spider_index_v4.png")  1px -953px no-repeat;
+}
+.mao-1 a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 100%;
+    height: 1000px;
+    background-color: #6B488C;
+    position: relative;
+}
+article{
+    width: 360px;
+    height: 510px;
+    margin:0 auto;
+    /*border: 1px solid;*/
+}
+article p{
+    text-align: center;
+}
+article h1{
+    text-align: center;
+}
+article p:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+article .pass{
+    width: 360px;
+    height: 160px;
+    /*background-color: #8a66ab;*/
+    background-color: #6B488C;
+    position: relative;
+}
+article .pass input{
+    width: 320px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    background-color: #6B488C;
+    border-bottom: 1px solid #cccccc;
+
+}
+input::-webkit-input-placeholder{
+    color: #c0c0ff;
+}
+article .pass hr{
+    width:308px;
+   margin-left: 20px;
+}
+article .pass a{
+    position: absolute;
+    top:70px;
+    right: 0px;
+    color: #c0c0ff;
+}
+article .pass button{
+    width: 300px;
+    height: 40px;
+    background-color: #4bdd4d;
+    border:none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+article .register p{
+    float: left;
+    color: #c0c0ff;
+    font-size:17px;
+    margin-left: 20px;
+}
+article .register p:nth-of-type(4){
+    margin-left: 50px;
+}
+article .register p:nth-of-type(5){
+    color: #8d8d8d;
+    margin-top:5px;
+    margin-left: 0px;
+}
+
+article .register a{
+    color: #c0c0ff;
+}
+article .float p,article .float-r p{
+line-height: 35px;
+}
+article .float a,article .float-r a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    /*margin-left: 15px;*/
+    /*background-color: black;*/
+}
+
+article .float a:first-of-type{
+    margin-left: 25px;
+    background: url("../img/l-11.png") no-repeat -1px 0px;
+}
+article .float a:last-of-type{
+    margin-left: 10px;
+    background: url("../img/l-11.png") no-repeat -1px -39px;
+}
+article .float-r a:first-of-type{
+    margin-left: 10px;
+    background: url("../img/l-11.png") no-repeat -39px -1px;
+}
+article .float-r a:last-of-type{
+    margin-left: 10px;
+    background: url("../img/l-11.png") no-repeat -40px -40px;
+}
+article .float-r a:nth-of-type(2){
+    margin-left: 10px;
+    background: url("../img/l-11.png") no-repeat -77px -1px;
+}
+article .float{
+    float: left;
+    /*margin-left: 20px;*/
+}
+article .float-r{
+    float: left;
+    /*margin-left: 20px;*/
+}
+
+
+/*动画部分*/
+.aside01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 150px;
+    background-color: white;
+    animation:donghua 1 2s 10s step-start both;
+    background: url("../img/z-1.png") 0px 0px no-repeat;
+}
+@keyframes donghua {
+    from{
+        width: 87px;
+        background-position:  -90px 0px;
+    }
+    10%{
+        width: 116px;
+        background-position:  -200px 0px;
+    }
+    20%{
+        width: 116px;
+        background-position:  -330px 0px;
+    }
+    30%{
+        width: 122px;
+        background-position:  -440px 0px;
+    }
+    40%{
+        width: 107px;
+        background-position:  -557px 0px;
+    }
+    50%{
+        width: 119px;
+        background-position:  -675px 0px;
+    }
+    60%{
+        width: 119px;
+        background-position:  -805px 0px;
+    }
+    70%{
+        width: 119px;
+        background-position:  -908px 0px;
+    }
+    to{
+        background-position:  -0px 0px;
+    }
+}
+.aside02{
+    position: absolute;
+    top: 49px;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    /*transform:translateX(521px)translateY(0px);*/
+    animation:baseball linear 20s both 10.6s;
+    /*background: url("../img/z-1.png") 0px 0px no-repeat;*/
+}
+@keyframes baseball {
+    form{
+        background-color: #ff2121;
+        transform:translateX(100px);
+
+    }
+    5%{
+
+        background-color: #ff2b1d;
+        transform:translateX(521px)
+    }
+    10%{
+
+        background-color: #ff3822;
+        transform:translateX(429px)translateY(-49px);
+    }
+    25%{
+        background-color: #ff4939;
+        transform:translateX(-118px)translateY(433px)
+    }
+    35%{
+        background-color: #ff1800;
+        transform: translateX(279px)translateY(665px);
+    }
+    45%{
+        transform: translateX(516px)translateY(451px);
+    }
+    55%{
+        background-color: #ff1800;
+        transform: translateX(838px)translateY(666px);
+    }
+    65%{
+        transform: translateX(1423px)translateY(280px);
+    }
+    75%{
+        background-color: #ff1800;
+        transform: translateX(1211px)translateY(191px);
+    }
+    85%{
+        background-color: #ff4d37;
+        transform: translateX(1211px)translateY(665px);
+    }
+    89%{
+        background-color: #ff6775;
+        transform: translateX(1211px)translateY(463px)
+    }
+    93%{
+        background-color: #ffa5aa;
+        transform: translateX(1211px)translateY(665px);
+    }
+    97%{
+        opacity: 1;
+        transform: translateX(1211px)translateY(555px);
+    }
+    99%{
+        transform: translateX(1211px)translateY(665px);
+    }
+    to{
+        transform: translateX(1261px)translateY(665px);
+        opacity: 0;
+    }
+}
+
+/*logo倒坍*/
+@keyframes logo01 {
+    form{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(30deg);
+    }
+}
+article .logo001{
+    animation: logo01 1s linear 11.6s 1 both;
+}
+/*article .logo001:hover{*/
+    /*transform: rotate(0deg);*/
+/*}*/
+
+@keyframes qq01 {
+    form{
+        transform: translateX(0px)translateY(0px)rotate(0deg);
+    }
+    30%{
+        transform: translateX(100px)translateY(-100px)rotate(360deg);
+    }
+    55%{
+        transform: translateX(100px)translateY(0px);
+    }
+    60%{
+        transform: translateX(100px)translateY(-50px);
+    }
+    70%{
+        transform: translateX(100px)translateY(0px);
+    }
+    to{
+        transform: translateX(0px)translateY(0px);
+    }
+}
+article .float a:first-of-type{
+    animation: qq01 5s 19.6s linear 1;
+}
+button{
+    cursor: pointer;
+}
